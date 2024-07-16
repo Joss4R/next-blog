@@ -1,0 +1,89 @@
+:root{
+    --bg:white;
+    --textColor:black;
+    --softBg:#f0f0f0;
+    --softTextColor:#626262;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    max-width: 100vw;
+  
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.dark{
+    --bg:#111;
+    --textColor:#ddd;
+    --softBg:#1f273a;
+    --softTextColor:#a6a6a6;
+}
+.light{
+    --bg:white;
+    --textColor:black;
+    --softBg:#f0f0f0;
+    --softTextColor:#626262;
+}
+
+.container{
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--textColor);
+}
+
+.wrapper{
+   max-width: 1536px; 
+   margin-left: auto;
+   margin-right: auto;
+   
+   padding-left: 80px;
+   padding-right: 80px;
+}
+
+@media screen and (max-width:1024px){
+    
+    .wrapper{
+        max-width: 768px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media screen and (max-width:768px){
+    
+    .wrapper{
+        max-width: 648px;
+       
+    }
+}
+@media screen and (max-width:648px){
+    
+    .wrapper{
+        max-width: 475px;
+       
+    }
+}
+@media screen and (max-width:475px){
+    
+    .wrapper{
+        max-width: 300px;
+       
+    }
+}
+
+
+.ql-container{
+    font-size: 28px !important;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before{
+    color: #b3b3b1;
+}
