@@ -8,9 +8,11 @@ const Card = ({key, item}) => {
   return (
     <div className={styles.container} key={key}>
         
-          <div className={styles.imageContainer}>
-            <Image src="/p1.jpeg" alt="#" fill className={styles.image} />
-          </div>
+      {item.img && (
+        <div className={styles.imageContainer}>
+          <Image src={item.img} alt="" fill className={styles.image} />
+        </div>
+      )}
           <div className={styles.textContainer}>
                 <div className={styles.details}>
                     <span className={styles.date}>{item.createdAt.substring(0,10)} -</span>

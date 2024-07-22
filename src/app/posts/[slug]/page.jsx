@@ -35,7 +35,7 @@ const SinglePage = async ({params}) => {
             </div>
           </div>
           {data?.img && <div className={styles.imageContainer}>
-            <Image src="/ray.jpeg" fill  alt="Miss Kahu" className={styles.image}/>
+            <Image src={data?.img} fill  alt="Miss Kahu" className={styles.image}/>
           </div>}
       </div>
       <div className={styles.content}>
@@ -46,7 +46,7 @@ const SinglePage = async ({params}) => {
             <Comment postSlug={slug}/>
           </div>
         </div>
-        <Menu/>
+        <Menu data={data} />
       </div>
     </div>
   )
